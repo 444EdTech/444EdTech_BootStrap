@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.enrollment-section {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.enrollment-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00bcd4;
+    text-align: center;
+}
+
+.course-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.course-info h2 {
+    font-size: 22px;
+    color: #ccc;
+}
+
+.enrollment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00bcd4;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll in Course</title>
+    <link rel="stylesheet" href="enrollmentStyle.css">
+</head>
+<body>
+
+<section class="enrollment-section">
+    <div class="container">
+        <h1 class="enrollment-title">Enroll in Your Course</h1>
+        
+        <!-- Course Info Section -->
+        <div class="course-info" id="course-info">
+            <h2 id="course-title">Course Title</h2>
+            <p id="course-description">Course description will go here.</p>
+        </div>
+
+        <!-- Enrollment Form -->
+        <form class="enrollment-form" action="submitEnrollment.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Previous Experience (if any):</label>
+                <textarea id="experience" name="experience"></textarea>
+            </div>
+            <button type="submit" class="btn enroll-btn">Submit Enrollment</button>
+        </form>
+    </div>
+</section>
+
+<script>
+    // Get the course ID from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const courseId = urlParams.get('courseId');
+
+    // Course information based on course ID
+    const courses = {
+        fsd: {
+            title: "Full Stack Development",
+            description: "This program provides a comprehensive overview of how to create modern, responsive websites. Through a combination of lectures, and roadmaps to follow, students will gain a strong understanding of how to design, implement, and analyze the efficiency of various Tech Stacks."
+        },
+        dsa: {
+             title: "Data Structures and Algorithms",
+            description: "This program provides a comprehensive overview of fundamental data structures and algorithms used in computer science. Through a combination of lectures, coding practices, and projects, students will gain a strong understanding of how to design, implement, and analyze the efficiency of various data structures and algorithms."
+        }
+        // You can add more courses here with their IDs and descriptions
+    };
+
+    // Display course information based on course ID
+    if (courses[courseId]) {
+        document.getElementById('course-title').textContent = courses[courseId].title;
+        document.getElementById('course-description').textContent = courses[courseId].description;
+    } else {
+        document.getElementById('course-title').textContent = "Course Not Found";
+        document.getElementById('course-description').textContent = "The requested course is not available.";
+    }
+</script>
+
+</body>
+</html>

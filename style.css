@@ -101,6 +101,7 @@ nav ul li a:hover::after
 {
     color: #766dec;
 }
+
 .header-text h3
 {
     font-size: 35px;
@@ -109,7 +110,20 @@ nav ul li a:hover::after
 
 .header-text h3 span
 {
-    color: #766dec;
+    color: #10087e;
+}
+
+.header-text h4
+{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.header-text h4 span
+{
+    color: #0300d0;
+    /* color: #00bcd4; */
 }
 
 
@@ -789,4 +803,14 @@ nav .fas
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* This keeps the text color the same as the surrounding text */
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
 }
