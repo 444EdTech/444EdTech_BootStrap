@@ -1,7 +1,7 @@
 *{
     margin : 0;
     padding : 0;
-    font-family : 'Poppins',sans-serif;
+    font-family: Copperplate, Papyrus, fantasy;
     box-sizing : border-box;
 }
 
@@ -80,16 +80,22 @@ nav ul li a:hover::after
 {
     margin-top: 20%;
     font-size: 30px;
+    font-size: 1.75rem;
+    color: #007bff;
+    animation: fadeIn 1s ease-in-out;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 .header-text h1
 {
     font-size: 60px;
+    font-family: Copperplate, Papyrus, fantasy;
     margin-top: 20px;
 }
 
 .header-text h1 span
 {
     color: #766dec;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 .header-text h2
 {
