@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Career Workshops</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .jumbotron {
+      background-image: url('https://via.placeholder.com/1500x500');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+    .jumbotron h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    .jumbotron p {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004d99;
+    }
+    .section {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+    }
+    .section h2 img {
+      margin-left: 1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    .section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .section ul {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .section ul li {
+      margin-bottom: 1rem;
+    }
+    .section ul li:before {
+      content: "✓ ";
+      color: #007bff;
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5rem;
+    }
+    .program-card {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      padding: 2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .program-card h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .program-card p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .program-card .btn {
+      align-self: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Personalized Career Workshops</h1>
+      <p>Tailored programs to help you achieve your career goals.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="program-card">
+          <div>
+            <h3>DSA</h3>
+            <p>Dive deep into Data Structures and Algorithms and master the fundamentals of problem-solving.</p>
+            <ul>
+              <li>Learn essential data structures</li>
+              <li>Implement efficient algorithms</li>
+              <li>Practice coding challenges</li>
+              <li>Prepare for technical interviews</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="coursePageForDSA.html" role="button">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card">
+          <div>
+            <h3>Full Stack</h3>
+            <p>Become a full-stack developer and build end-to-end web applications.</p>
+            <ul>
+              <li>Master front-end technologies</li>
+              <li>Learn back-end development</li>
+              <li>Understand database design</li>
+              <li>Deploy applications to the cloud</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="dsa.html" role="button">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card">
+          <div>
+            <h3>Data Science</h3>
+            <p>Harness the power of data to uncover insights and drive business decisions.</p>
+            <ul>
+              <li>Explore data analysis techniques</li>
+              <li>Implement machine learning models</li>
+              <li>Visualize data for effective communication</li>
+              <li>Work on real-world data science projects</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="#" role="button">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Workshop Details <img src="https://via.placeholder.com/30x30" alt="Tending Up Arrow"></h2>
+      <p>Date: August 15, 2024</p>
+      <p>Time: 9:00 AM - 5:00 PM</p>
+      <p>Location: 123 Main Street, Anytown USA</p>
+      <p>Cost: $99 per program</p>
+      <a class="btn btn-primary" href="#" role="button">Register Now</a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

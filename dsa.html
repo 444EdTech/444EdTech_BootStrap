@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Workshop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .jumbotron {
+      background-image: url('https://via.placeholder.com/1500x500');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+    .jumbotron h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004d99;
+    }
+    .section {
+      padding: 5rem 0;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    .section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .section ul {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .section ul li {
+      margin-bottom: 1rem;
+    }
+    .section ul li:before {
+      content: "✓ ";
+      color: #007bff;
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5rem;
+    }
+    .testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #333; /* Darker background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.profile-info h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.testimonial-text {
+    font-size: 20px;
+    color: #fff;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 29px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>DSA Workshop</h1>
+      <p>Master Data Structures and Algorithms for effective problem-solving.</p>
+    </div>
+  </div>
+
+  <div class="container section">
+    <h2>Why DSA Matters</h2>
+    <p>Data Structures and Algorithms (DSA) are the backbone of efficient programming. Understanding DSA is crucial for:</p>
+    <ul>
+      <li>Optimizing code performance</li>
+      <li>Preparing for technical interviews</li>
+      <li>Building scalable applications</li>
+      <li>Solving complex problems with ease</li>
+    </ul>
+
+    <h2>What You'll Learn</h2>
+    <ul>
+      <li>Essential data structures: arrays, linked lists, stacks, queues, trees, and graphs</li>
+      <li>Sorting algorithms: bubble sort, merge sort, quicksort, and more</li>
+      <li>Searching algorithms: linear search, binary search</li>
+      <li>Dynamic programming techniques and their applications</li>
+      <li>Hands-on coding challenges and interview preparation</li>
+    </ul>
+
+    <h2>Key Benefits</h2>
+    <ul>
+      <li>Gain confidence in solving algorithmic challenges</li>
+      <li>Improve your coding skills with practical exercises</li>
+      <li>Receive personalized feedback from experienced instructors</li>
+      <li>Network with fellow participants and expand your professional circle</li>
+    </ul>
+
+    <div class="testimonials">
+      <h2>What Our Students Say</h2>
+      <div class="row testimonial-container">
+          <div class="col-md-2 testimonial-card">
+              <div class="profile">
+                  <img src="images/vk.jpeg" alt="John Doe" class="profile-img">
+                  <div class="profile-info">
+                      <h3>Varshitha K</h3>
+                      <p>Student</p>
+                  </div>
+              </div>
+              <p class="testimonial-text">"Sai Ram Charan is an excellent instructor. His explanations are clear, and he is always available to help."</p>
+              <div class="rating">
+                  ★★★★★
+              </div>
+          </div>
+          <div class="col-md-2 testimonial-card">
+              <div class="profile">
+                  <img src="profile.jpg" alt="John Doe" class="profile-img">
+                  <div class="profile-info">
+                      <h3>Sripad</h3>
+                      <p>Student</p>
+                  </div>
+              </div>
+              <p class="testimonial-text">"This platform has greatly enhanced my understanding of DSA. The study guides are comprehensive and easy to follow."</p>
+              <div class="rating">
+                  ★★★★★
+              </div>
+          </div>
+          <!-- <div class="col-md-2 testimonial-card">
+              <div class="profile">
+                  <img src="profile.jpg" alt="John Doe" class="profile-img">
+                  <div class="profile-info">
+                      <h3>Varshitha K</h3>
+                      <p>Student</p>
+                  </div>
+              </div>
+              <p class="testimonial-text">"The roadmap provided on this site has been instrumental in my career growth. The resources are top-notch and have helped me stay focused and motivated."</p>
+              <div class="rating">
+                  ★★★★★
+              </div>
+          </div> -->
+      </div>
+  </div>
+
+    <h2>Workshop Details</h2>
+    <p><strong>Date:</strong> August 15, 2024</p>
+    <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
+    <p><strong>Location:</strong> 123 Main Street, Anytown USA</p>
+    <p><strong>Cost:</strong> $99</p>
+    <a class="btn btn-primary" href="#" role="button">Register Now</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
