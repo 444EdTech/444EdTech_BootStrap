@@ -1,128 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Career Awareness Workshop</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    .jumbotron {
-      background-image: url('https://via.placeholder.com/1500x500');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-    }
-    .jumbotron h1 {
-      font-size: 4rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-    .jumbotron p {
-      font-size: 1.5rem;
-      margin-bottom: 3rem;
-    }
-    .btn-primary {
-      background-color: #007bff;
-      border-color: #007bff;
-      font-size: 1.2rem;
-      padding: 1rem 2rem;
-    }
-    .btn-primary:hover {
-      background-color: #0056b3;
-      border-color: #004d99;
-    }
-    .section {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
-    .section h2 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-    .section p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-    .section ul {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      list-style-type: none;
-      padding-left: 0;
-    }
-    .section ul li {
-      margin-bottom: 1rem;
-    }
-    .section ul li:before {
-      content: "✓ ";
-      color: #007bff;
-      font-weight: bold;
-      display: inline-block;
-      width: 1.5rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms Course</title>
+    <link rel="stylesheet" href="courseStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .course-description {
+            padding: 2rem;
+        }
+        .course-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .course-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .section ul {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .section ul li {
+            margin-bottom: 1rem;
+        }
+        .section ul li:before {
+            content: "✓ ";
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5rem;
+        }
+        .instructor {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .instructor-image {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .testimonial {
+            background-color: #1c1c1c;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .testimonial-card {
+            width: 30%;
+            margin: 1rem;
+            text-align: center;
+        }
+        .profile-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .enrollment {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .enroll-btn {
+            background-color: #007bff;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .enroll-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1>Career Awareness Workshop</h1>
-      <p>Discover your true potential and unlock your career path.</p>
-      <a class="btn btn-primary btn-lg" href="#content" role="button">Learn more</a>
-    </div>
-  </div>
 
-  <div id="content">
+<section class="course-description">
     <div class="container">
+        <h1 class="course-title">Data Structures and Algorithms</h1>
+        <p class="course-tagline">Master Data Structures and Algorithms to excel in coding interviews and build strong problem-solving skills.</p>
+        
         <div class="row">
-        <div class="col-md-6">
-            <div class="section">
-            <h2>What You'll Learn</h2>
-            <ul>
-                <li>Identify your strengths and interests</li>
-                <li>Explore various career paths</li>
-                <li>Set achievable career goals</li>
-                <li>Create a personalized career plan</li>
-            </ul>
+            <div class="col-md-6">
+                <div class="section">
+                    <h2>Course Overview</h2>
+                    <p>This program provides a comprehensive overview of fundamental data structures and algorithms used in computer science. Through a combination of lectures, coding practices, and projects, students will gain a strong understanding of how to design, implement, and analyze the efficiency of various data structures and algorithms.</p>
+                </div>
+                <div class="section">
+                    <h2>What You'll Learn</h2>
+                    <ul>
+                        <li>What is DSA?</li>
+                        <li>How and where we use DSA practically?</li>
+                        <li>Choosing the right programming language</li>
+                        <li>Learning resources for your chosen language</li>
+                        <li>Where to practice: LeetCode, GeeksforGeeks</li>
+                        <li>Basic DSA terms: Time Complexity, Space Complexity, Test Cases, Inputs, Outputs</li>
+                        <li>Competitive Coding and Solutions</li>
+                        <li>DSA-related projects</li>
+                        <li>What companies expect from candidates</li>
+                        <li>Common interview questions by companies</li>
+                        <li>How to explain problems effectively in interviews</li>
+                        <li>Previous DSA interview questions</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="section">
+                    <h2>Instructor</h2>
+                    <div class="instructor">
+                        <img src="images/b1.jpeg" alt="Sai Ram Charan" class="instructor-image">
+                        <h3>Sai Ram Charan</h3>
+                        <p>SDE-1</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="section">
-            <h2>Who Should Attend</h2>
-            <p>Our workshop is designed for individuals who are:</p>
-            <ul>
-                <li>Unsure about their career direction</li>
-                <li>Considering a career change</li>
-                <li>Entering the workforce for the first time</li>
-                <li>Seeking to advance their career</li>
-            </ul>
-            </div>
-        </div>
-      </div>
 
-    <div class="section">
-      <h2>Workshop Details</h2>
-      <p>Date: August 15, 2024</p>
-      <p>Time: 9:00 AM - 5:00 PM</p>
-      <p>Location: 123 Main Street, Anytown USA</p>
-      <p>Cost: $99 per person</p>
-      <a class="btn btn-primary" href="#" role="button">Register Now</a>
+        <div class="section">
+            <h2>Who This Course Is For</h2>
+            <p>This course is ideal for:</p>
+            <ul>
+                <li>Beginners with no prior coding experience</li>
+                <li>Students looking to enhance their coding knowledge</li>
+                <li>Enthusiastic learners eager to dive into DSA</li>
+            </ul>
+        </div>
+
+        <div class="section testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="images/vk.jpeg" alt="Varshitha K" class="profile-img">
+                        <div class="profile-info">
+                            <h3>Varshitha K</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Sai Ram Charan is an excellent instructor. His explanations are clear, and he is always available to help."</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="profile.jpg" alt="Sripad" class="profile-img">
+                        <div class="profile-info">
+                            <h3>Sripad</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"This platform has greatly enhanced my understanding of DSA. The study guides are comprehensive and easy to follow."</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="enrollment">
+            <h2>Enroll Now</h2>
+            <p>Take the first step towards mastering Data Structures and Algorithms. Join our course today and start your journey!</p>
+            <a href="enrollment.html?courseId=dsa" class="btn enroll-btn">Enroll Now</a>
+        </div>
     </div>
-  </div>
+</section>
 
-</div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
