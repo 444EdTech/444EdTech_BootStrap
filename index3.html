@@ -8,20 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        /* Base styles for light and dark modes */
-        body {
-            transition: background-color 0.3s, color 0.3s;
-        }
         body.light-mode {
-            background-color: #f8f9fa; /* Light background */
-            color: #212529; /* Dark text */
+            background-color: #f8f9fa;
+            color: #212529;
         }
         body.dark-mode {
-            background-color: #343a40; /* Dark background */
-            color: #ffffff; /* Light text */
+            background-color: #343a40;
+            color: #ffffff;
         }
-
-        /* Header text styles */
         .header-text {
             margin-top: 20%;
             font-size: 1.75rem;
@@ -33,54 +27,29 @@
             margin-top: 20px;
         }
         .header-text h4 span {
-            color: #0300d0; /* Default span color */
+            color: #0300d0;
         }
+        /* Light mode styles */
         body.light-mode .header-text h4 {
             color: #212529; /* Dark text for light mode */
         }
         body.light-mode .header-text h4 span {
-            color: #007bff; /* Span color for light mode */
+            color: #007bff; /* Keep the span color for light mode */
         }
-
-        /* About and What sections */
-        #about, #what {
-            padding: 50px;
-            color: inherit; /* Inherit text color from body */
+        /* About Us Section Styles */
+        .about-col-1, .about-col-2, .what-col-1, .what-col-2 {
+            flex: 1;
         }
-        .row {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        .no-bullets {
+            list-style-type: none;
+            padding: 0;
         }
-        .abt{
-            background-color: #007bff;
+        .sub-title {
+            color: #007bff; /* Customize subtitle color */
         }
-        body.light-mode .abt {
-            background-color: pink;
-        }
-        .about-col-1, .what-col-1 {
-            flex-basis: 35%;
-        }
-        .about-col-1 img, .what-col-2 img {
-            width: 100%;
-            border-radius: 15px; /* Corners will be round */
-        }
-        .about-col-2, .what-col-1 {
-            flex-basis: 60%;
-        }
-        .about-col-2 p, .what-col-1 p {
-            font-size: 21px;
-        }
-        ul.no-bullets {
-            list-style-type: none; /* Remove bullets */
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove margins */
-        }
-        .custom-font-heading {
-            font-size: 50px;
-        }
-        .custom-font-content {
-            font-size: large;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -130,67 +99,65 @@
                     </h4>
                 </i>
             </div>
-            <div class="col-2" style="width: 20%; text-align: end;">
+            <div class="col-2" style="width: 20%; text-align: center;">
                 <img src="images/images.jpg" alt="444" style="width: 200px; height: 200px;">
             </div>
         </div>
     </div>
 
     <!-- About Section -->
-    <div id="about-us">
+    <div id="about-us" class="container my-5">
         <!-- ----- Why ---- -->
         <div id="about">
-            <div class="container text-center p-5 m-5 abt">
-                <div class="heading">
-                    <b>
-                        <p class="lead custom-font-heading">
-                            "" What We <s><span class="text-danger text-decoration-line-through custom-font">Do</span></s> 
-                            <span class="custom-font">Don't</span> ""
-                        </p>
-                    </b>
-                </div>
-                
-                <div class="content custom-font-content">
-                    <ul class="no-bullets ">
-                        <li>We don't let you sacrifice your dreams</li>
-                        <li>We don't believe in your fear of loss</li>
-                    </ul>
+            <div class="text-center my-5">
+                <div class="alert">
+                    <div class="heading">
+                        <b>
+                            <p class="lead custom-font">
+                                "" What We <s><span class="text-danger text-decoration-line-through custom-font">Do</span></s> 
+                                <span class="custom-font">Don't</span> ""
+                            </p>
+                        </b>
+                    </div>
+                    
+                    <div class="content">
+                        <ul class="no-bullets">
+                            <li>We don't let you sacrifice your dreams</li>
+                            <li>We don't believe in your fear of loss</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/work-29.png" alt="User pic">
-                    </div>
-                    <div class="about-col-2">
-                        <br><br><br>
-                        <h1 class="sub-title">Why we are doing this?</h1>
-                        <br>
-                        <p>As fellow engineering graduates, we understand the challenges and hurdles students face in securing their dream placements. The intense competition, the evolving tech landscape, and the pressure to excel can be overwhelming.</p>
-                    </div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/work-29.png" alt="User pic" class="img-fluid">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Why we are doing this?</h1>
+                    <p>As fellow engineering graduates, we understand the challenges and hurdles students face in securing their dream placements. The intense competition, the evolving tech landscape, and the pressure to excel can be overwhelming.</p>
                 </div>
             </div>
         </div>
 
         <!-- ----- What ---- -->
-        <div id="what">
-            <div class="container">
-                <div class="row">
-                    <div class="what-col-1">
+        <div id="what" class="my-5">
+            <div class="row">
+                <div class="what-col-1">
+                    <section class="what-we-do">
                         <h1 class="sub-title">What We Do</h1>
                         <h2>Your Future, Our Guidance</h2><br>
                         <p>We will help you to add value in your Life's by trying to solve the problem of dedication</p>
-                        <br><br>
+                        <br>
                         <p>Securing a dream job in the tech industry is a daunting task for many engineering students. The rapidly evolving landscape, fierce competition, and uncertainty about career paths can be overwhelming.</p>
                         <br>
                         <p>We at <b>444</b> understand these challenges firsthand. With our deep industry experience and passion for student success, we're committed to guiding you towards a fulfilling tech career.</p>
                         <br>
                         <p>Our awareness programs will equip you with the knowledge and insights needed to make informed decisions about your career path. We'll help you understand the latest industry trends, explore various job roles, and develop a roadmap for your professional journey.</p>                      
-                    </div>
-                    <div class="what-col-2">
-                        <img src="images/work-44.png" alt="444" style="width: 200px; height: 200px;">
-                    </div>
+                    </section>
+                </div>
+                <div class="what-col-2">
+                    <img src="images/work-44.png" alt="User pic" class="img-fluid">
                 </div>
             </div>
         </div>
