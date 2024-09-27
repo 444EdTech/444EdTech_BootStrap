@@ -112,6 +112,9 @@
         }
       </style>
       
+
+    <link rel="manifest" href="/manifest.json">
+
     <title>444 EdTech Sai Ram</title>
 </head>
 <body>
@@ -459,5 +462,20 @@
             }
             });
         </script>
+    
+
+    <script>
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js').then((registration) => {
+                console.log('ServiceWorker registration successful:', registration.scope);
+                }, (err) => {
+                console.log('ServiceWorker registration failed:', err);
+                });
+            });
+            }
+
+    </script>
 </body>
 </html>
